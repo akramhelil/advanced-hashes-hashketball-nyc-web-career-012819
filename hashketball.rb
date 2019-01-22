@@ -145,10 +145,9 @@ end
 
 
 def player_numbers(team_name)
-binding.pry  
   find_the_team(team_name)[:players].map{ |player_name, stats|  stats[:number] }
 end
-binding.pry
+
 
 def player_stats(player_name)
   find_the_player(player_name)
@@ -185,3 +184,11 @@ end
 def player_biggest_shoe_size
   players.max_by{|player, stats| stats.fetch(:shoe)}[1]
 end
+
+
+def player_names
+  game_hash.each do |variable|
+    binding.pry
+  end
+end
+binding.pry 
