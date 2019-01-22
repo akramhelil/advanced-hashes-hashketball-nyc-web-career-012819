@@ -191,4 +191,4 @@ def player_names
     binding.pry
   end
 end
-binding.pry 
+binding.pry
