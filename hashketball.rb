@@ -145,10 +145,10 @@ end
 
 
 def player_numbers(team_name)
-  find_the_team(team_name)[:players].map{ |player_name, stats| stats[:number] }
+binding.pry  
+  find_the_team(team_name)[:players].map{ |player_name, stats|  stats[:number] }
 end
-
-
+binding.pry
 
 def player_stats(player_name)
   find_the_player(player_name)
